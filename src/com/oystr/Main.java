@@ -17,8 +17,8 @@ public class Main {
             String input = args[0];
             Document doc = Jsoup
                     .connect(input)
-                    .userAgent("Mozilla/5.0")
-                    .timeout(10 * 1000)
+                    .userAgent("Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36")
+                    .timeout(100 * 1000)
                     .get();
             Elements links = doc.select("a[href]");
             HashMap<String, Integer> internalExternal = helperOystr.getInternalExternal(links);

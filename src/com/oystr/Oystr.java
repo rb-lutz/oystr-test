@@ -19,7 +19,7 @@ public class Oystr {
                 boolean html5 = documentType.toString().indexOf("<!doctype html>") !=-1? true: false;
                 documentType.toString().indexOf("<!doctype html>");
                 if (html5) {
-                    htmlType = "HTML version -> HTML5 (%s)" + documentType.toString() + ")";
+                    htmlType = "HTML version -> HTML5 " + documentType.toString() + ")";
                     break;
                 } else {
                     htmlType = "HTML version -> HTML4 (" + documentType.toString() + ")";
